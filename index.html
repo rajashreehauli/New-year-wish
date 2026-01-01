@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy New Year</title>
+  <style>
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .gift {
+      font-size: 80px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .gift:hover {
+      transform: scale(1.2);
+    }
+    .message-box {
+      display: none;
+      max-width: 700px;
+      background: #111827;
+      padding: 30px;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+    h1 {
+      color: #38bdf8;
+      text-align: center;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    blockquote {
+      border-left: 4px solid #38bdf8;
+      padding-left: 10px;
+      color: #a5b4fc;
+      font-style: italic;
+    }
+    b {
+      color: #facc15;
+    }
+  </style>
+</head>
+<body>
+  <!-- Only the gift box appears first -->
+  <div class="gift" onclick="showMessage()">🎁</div>
+
+  <!-- The New Year message appears after clicking the gift -->
+  <div class="message-box" id="message">
+    <h1>Happy New Year...Yaarr!! 🌟</h1>
+
+    <p>As this new year begins.. i genuinly feel happy to start with you.. Out of millions of people.. I met you...and i know kii yeh bas ek luck ya coincidence nhi hai it's a blessing... And I wish har Kisike ke life mei tumhari taraf ek friend mile...</p>
+
+    <p>Yaar the real purpose of life is only to be happy... So own it.. no matter wt... Hamesha khush raho... Haste ho...😊</p>
+
+    <p>And Thank you for being a good part of my life in your own way... I really wish the best for you in your preparation, your dreams, and everything that matters to you.... Have a great year...✨🥳🎉</p>
+
+    <blockquote>“True friends don’t add days to life, they add life to days…<br>
+    May this year fill your life with light in a thousand beautiful ways..."</blockquote>
+
+    <p><b>ALL THE BEST...✨</b><br>
+    <b>Take care always...</b></p>
+
+    <p><b>Radhe Radhe...💙</b></p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('message').style.display = 'block';
+      document.querySelector('.gift').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
